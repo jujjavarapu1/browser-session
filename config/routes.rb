@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  root 'items#index'
+  resources :items
+  get 'sessions/create'
+
+  get 'sessions/show'
+
+  get 'sessions/new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
